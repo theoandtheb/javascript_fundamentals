@@ -7,12 +7,35 @@
 // returns whichever number is the greater (higher) number.
 // Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
 
+var greaterNum = function(x,y) {
+	if (x>y) {
+		return x
+	} else {
+		return y
+	}
+}
+
+greaterNum(4,5);
+
 // EXERCISE: The World Translator
 
 // Write a function named helloWorld that:
 // takes 1 argument, a language code (e.g. "es", "de", "en")
 // returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
 // Call that function for each of the supported languages and log the result to make sure it works.
+
+var helloWorld = function(l) {
+	if (l === "es") {
+		return "Ola, Mundo!" }
+	 else if (l === "de") {
+		return "Hallo, Worlden!"}
+			else {
+		return "Hello, World!"}
+}
+
+helloWorld();
+helloWorld("es");
+helloWorld("de");
 
 // EXERCISE: The Grade Assigner
 
