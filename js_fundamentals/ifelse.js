@@ -44,6 +44,21 @@ helloWorld("de");
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
 
+var assignGrade = function(gr) {
+	if (gr < 50) {
+		return "F"
+	} else if (gr<60) {
+		return "D"
+	} else if (gr<70) {
+		return "C"
+	} else if (gr<80) {
+		return "B"
+	} else {
+		return "A" }
+}
+
+assignGrade()
+
 // EXERCISE: The Pluralizer
 
 // Write a function named pluralize that:
@@ -52,6 +67,19 @@ helloWorld("de");
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+var pluralize = function(noun,num) {
+	if (noun === "goose") {
+		return num +" "+"geese"
+	} else if (noun === "sheep") {
+		return num +" "+"sheep"
+	} else {
+		if (num > 1) {
+			return num +" "+noun + "s"
+		} else {
+			return noun
+		}
+	}
+}
 
-
+pluralize()
 
